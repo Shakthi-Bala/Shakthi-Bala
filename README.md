@@ -1,4 +1,4 @@
-# Shakthi Bala
+# Shakthi-Bala
 
 Robotics Engineer and Graduate Student at Worcester Polytechnic Institute (WPI).
 
