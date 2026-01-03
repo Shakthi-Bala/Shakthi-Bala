@@ -18,9 +18,9 @@ learning-based control and real-world deployment.
 ## 🔬 Research Interests
 - Robotic Manipulation & Grasping
 - Reinforcement Learning for Control
-- ROS2-based Robotic Systems
 - Aerial Robotics & Autonomous Navigation
-- Vision-based Perception
+- Vitual Inertial Odometry
+- SLAM & SFM 
 
 ---
 
