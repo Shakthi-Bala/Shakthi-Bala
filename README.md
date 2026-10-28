@@ -1,70 +1,61 @@
-# Shakthi Bala
+# Shakthibala Sivagami Balamurugan
 
-MS Robotics Engineering · WPI · GPA 4.0
-Perception · Manipulation · Aerial Robotics · Massachusetts, US
+**Perception · State estimation · Robot learning**<br>
+M.S. Robotics Engineering, Worcester Polytechnic Institute · Expected May 2027 · Massachusetts, USA
 
----
+[Portfolio](https://shakthi-bala.github.io/) · [LinkedIn](https://www.linkedin.com/in/shakthi-bala/) · [Email](mailto:shakthibala2004@gmail.com)
 
-## About
+I’m a student researcher at PeAR Lab, WPI, building lightweight perception for flapping-wing robots. My projects cover visual-inertial estimation, occupancy forecasting, learned manipulation, and reproducible research software.
 
-I build end-to-end robotic systems — from sensor fusion and learned perception to motion planning, control, and deployment on constrained hardware.
+**Seeking summer 2027 internships and full-time engineering or applied research roles. Full-time start date flexible.**
 
-Directed researcher at **PeAR Lab (WPI)** under Prof. Nitin Sanket, developing lightweight multimodal perception for flapping-wing MAVs that works in snow, smoke, and darkness. Previously at **MER Lab (WPI)** and **DManD Lab (SUTD)**.
+## Selected projects
 
----
+Project names link to code; the write-ups include implementation choices, evaluation conditions, demos, and reproduction instructions.
+
+| Project                                                                                                     | Core tools                              | Result / evidence                                                                                                                                                                                                                      |
+| ----------------------------------------------------------------------------------------------------------- | --------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Stereo VIO](https://github.com/Shakthi-Bala/Classical_vio/tree/cpp)                                        | C++17 · ROS 2 · Eigen · Ceres           | **0.156 m mean ATE** across all 11 EuRoC sequences, with SE3 alignment and loop closure disabled. [Write-up](https://shakthi-bala.github.io/projects/stereo-vio/)                                                                      |
+| [4D occupancy world model](https://github.com/Shakthi-Bala/4D_occupancy_world_model_for_autonomous_driving) | PyTorch · Transformers · SE(2) geometry | **41.92 mIoU; 42% fewer obstacle collisions** versus the imitation prior in **open-loop** planning with ground-truth past occupancy. [Write-up](https://shakthi-bala.github.io/projects/occupancy-world-model/)                        |
+| [UR5e imitation learning](https://github.com/Shakthi-Bala/imitation_learning_agent)                         | PyTorch · MuJoCo · Flow matching · PPO  | PPO reduced low-coverage failures from **11.4% to 6.4%** on 500 matched simulated starts, with similar observed full-solve rates. [Write-up](https://shakthi-bala.github.io/projects/imitation-learning/)                              |
+| [DeepVIO](https://github.com/Shakthi-Bala/Deep_vio)                                                         | PyTorch · ResNet-18 · BiLSTM · FiLM     | Team comparison on synthetic test data: **1.5 m ATE for ResNet-18 vision-only** versus 3.5 m for two-stage FiLM fusion. [Write-up](https://shakthi-bala.github.io/projects/deep-vio/)                                                  |
+| [Gap navigation](https://github.com/Shakthi-Bala/Navigating_through_unknown-Vizflyt)                        | Python · RAFT · OpenCV                  | A continuous **34-second rendered navigation sequence** showing RGB views, optical-flow detections, and passage through an irregular opening. [Demo & write-up](https://shakthi-bala.github.io/projects/gap-navigation/#project-demo)  |
+| [DevResearchFlow](https://github.com/Shakthi-Bala/DevResearchFlow/tree/dev)                                 | Python · JSON Schema · Git · CI         | A CLI for reviewed protocols and captured experiment evidence. The v0.3.0 validation reports **88 passing tests** and **84% combined statement/branch coverage**. [Write-up](https://shakthi-bala.github.io/projects/devresearchflow/) |
+
+[Browse all projects](https://shakthi-bala.github.io/work/) · [Technical notes](https://shakthi-bala.github.io/writing/)
 
 ## Research
 
-**ThermalUSFusionNet — PeAR Lab, WPI** · Jan 2026 – Present · Advisor: Prof. Nitin Sanket
-- Designed a 24 g, 1.2 mW ultrasound + thermal stack for a 148 g flapping-wing MAV — replacing LiDAR/RGB-D in degraded conditions
-- Built ThermalUSFusionNet: FiLM-conditioned encoder–decoder for per-pixel metric depth + uncertainty up to 7 m
-- Deployed full perception + RL navigation stack on Raspberry Pi Zero 2W at 18 Hz across 10+ indoor/outdoor sites
-- Robust on materials that defeat RGB-D: transparent acrylic, aluminum foil, matte black surfaces
+**PeAR Lab, WPI — Student Researcher** · Jan 2026–present<br>
+Advisor: Prof. Nitin Sanket
 
-**Ensemble Antipodal Grasping — MER Lab, WPI** · Aug – Dec 2025 · Advisor: Prof. Berk Calli
-- Modular benchmarking framework across 1000+ grasp attempts under noisy perception/execution
-- Ensemble grasp selection combining geometry planners + learned quality networks → +7% grasp success
-- Built failure analysis tools separating perception vs. execution failures
+- Developing **ThermalUSFusionNet**, a FiLM-conditioned encoder–decoder for metric depth and uncertainty up to 7 m from thermal images and ultrasonic A-scans.
+- Built a **24 g sensing package for a 148 g flapping-wing MAV** and deployed the stack on a **Raspberry Pi Zero 2W at 18 Hz**.
+- Evaluated across 10+ indoor/outdoor sites, including tests with acrylic, aluminum foil, and matte black surfaces; the work targets navigation in degraded visibility.
 
----
+**MER Lab, WPI — Student Researcher** · Aug–Dec 2025<br>
+Advisor: Prof. Berk Calli
 
-## Projects
+- Benchmarked classical and learned grasping methods across **1,000+ grasp attempts**, using simulation and real-world data.
+- Developed ensemble grasp selection and failure-analysis tools to distinguish perception errors from execution failures.
 
-| Project | Stack | Result |
-|---|---|---|
-| **DeepVIO** — FiLM Visual-Inertial Odometry | PyTorch · ResNet-18 · BiLSTM | 92% test loss reduction · 1.5 m ATE |
-| **Hybrid IK–RL Controller** — UR16e | MoveIt2 · PPO · Isaac Sim | +15% success in cluttered scenes |
-| **CBF Quadrotor Control** — Full dynamics | C3BF · Geometric Control · Isaac Sim | Real-time collision avoidance on min-snap trajectories |
-| **RRT* Aerial Planner** | ROS2 · PID · Cubic Splines | Full 3D planning + cascaded PID tracking |
-| **NeRF from Scratch** | PyTorch · Volume Rendering | Lego/Ship benchmarks + real drone scenes |
-| **Structure from Motion** | NumPy · SIFT · RANSAC · Bundle Adj. | Reconstructed WPI Unity Hall from 5 photos |
-| **Stereo MSCKF VIO** | Python · EuRoC | Validated vs mm-accurate Vicon ground truth |
-| **ICRA SimSort** | MATLAB · YOLOv4 · IK | 🥉 2nd Runner-Up, ICRA 2025 |
+Questions I’m working on:
 
----
+- How can explicit geometry improve learned world models?
+- How should uncertainty influence perception-driven planning?
+- What keeps localization working when visual tracking deteriorates?
 
-## Stack
+## Earlier work
 
-**Languages** · Python · C++17/20 · MATLAB
-**Robotics** · ROS2 · MoveIt2 · Nav2 · PX4 · MAVSDK
-**Simulation** · Isaac Sim · Gazebo · PyBullet
-**Learning** · PyTorch · PPO · FiLM · NeRF · 3DGS
-**Perception** · OpenCV · Open3D · PCL · ZED SDK
-**Hardware** · UR16e · Crazyflie · RealSense · ZED2i · RPi Zero 2W
+**DManD Lab, SUTD — Research internships** · May–Jul 2024; Feb–Jul 2025<br>
+UR16e manipulation, reinforcement learning, and ROS 1 → ROS 2 system integration. Our team earned **2nd Runner-Up in ICRA 2025 Simulation Sorting**.
 
----
+**WPI — Graduate Teaching Assistant** · Mar–May 2026<br>
+Guided undergraduate teams through a seven-week design course, including prototyping and hardware debugging.
 
-## Highlights
+**Pricol — Project Intern, Automation Software** · Aug–Oct 2024<br>
+Built Python interfaces and CAN/RS232 integration for automated assembly-line testing.
 
-- 4.0 GPA · MS Robotics Engineering, WPI
-- 🥉 2nd Runner-Up · ICRA 2025 Simulation Sorting
-- 18 Hz perception deployed on 148 g MAV · Raspberry Pi Zero 2W
-- 1000+ grasp attempts benchmarked at MER Lab
+[Full experience and education](https://shakthi-bala.github.io/about/)
 
----
-
-## Links
-
-- Portfolio: https://shakthibala2004.wixsite.com/sbgc
-- LinkedIn: https://www.linkedin.com/in/shakthi-bala/
-- Email: sbalamurugan@wpi.edu
+Away from robotics: [photography](https://shakthi-bala.github.io/photography/), chess, books, and films with a good plot.
