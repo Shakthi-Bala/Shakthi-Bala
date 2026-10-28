@@ -7,8 +7,6 @@ M.S. Robotics Engineering, Worcester Polytechnic Institute · Expected May 2027 
 
 I’m a student researcher at PeAR Lab, WPI, building lightweight perception for flapping-wing robots. My projects cover visual-inertial estimation, occupancy forecasting, learned manipulation, and reproducible research software.
 
-**Seeking summer 2027 internships and full-time engineering or applied research roles. Full-time start date flexible.**
-
 ## Selected projects
 
 Project names link to code; the write-ups include implementation choices, evaluation conditions, demos, and reproduction instructions.
