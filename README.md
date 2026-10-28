@@ -43,17 +43,6 @@ Questions I’m working on:
 - How should uncertainty influence perception-driven planning?
 - What keeps localization working when visual tracking deteriorates?
 
-## Earlier work
-
-**DManD Lab, SUTD — Research internships** · May–Jul 2024; Feb–Jul 2025<br>
-UR16e manipulation, reinforcement learning, and ROS 1 → ROS 2 system integration. Our team earned **2nd Runner-Up in ICRA 2025 Simulation Sorting**.
-
-**WPI — Graduate Teaching Assistant** · Mar–May 2026<br>
-Guided undergraduate teams through a seven-week design course, including prototyping and hardware debugging.
-
-**Pricol — Project Intern, Automation Software** · Aug–Oct 2024<br>
-Built Python interfaces and CAN/RS232 integration for automated assembly-line testing.
-
-[Full experience and education](https://shakthi-bala.github.io/about/)
+Previously at DManD Lab, SUTD; our team earned **2nd Runner-Up in ICRA 2025 Simulation Sorting**. [Experience →](https://shakthi-bala.github.io/about/#experience)
 
 Away from robotics: [photography](https://shakthi-bala.github.io/photography/), chess, books, and films with a good plot.
