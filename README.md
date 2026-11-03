@@ -13,11 +13,11 @@ I’m a student researcher at PeAR Lab, WPI, building lightweight perception for
 
 _Stereo visual-inertial odometry: feature tracks and trajectory estimates on EuRoC MH_05_difficult, played at approximately 8× speed._ [Demo & implementation →](https://shakthi-bala.github.io/projects/stereo-vio/)
 
-<a href="https://shakthi-bala.github.io/projects/imitation-learning/#project-demo">
-  <img src="assets/ur5e-imitation-learning.gif" width="720" alt="Simulated UR5e pushing a T-shaped block toward a target with a policy transferred from 2D demonstrations">
+<a href="https://shakthi-bala.github.io/projects/occupancy-world-model/#project-demo">
+  <img src="assets/occupancy-world-model.gif" width="900" alt="Three-second semantic occupancy forecasts comparing ground truth, a static-world ego-warp baseline, and the learned world model on Occ3D-nuScenes">
 </a>
 
-_From 2D demonstrations to a simulated UR5e: a flow-matching policy on Push-T._ [Demo & implementation →](https://shakthi-bala.github.io/projects/imitation-learning/)
+_4D occupancy forecasting: ground truth, ego-warp baseline, and learned predictions up to three seconds ahead, using ground-truth past occupancy._ [Demo & implementation →](https://shakthi-bala.github.io/projects/occupancy-world-model/)
 
 ## Selected projects
 
