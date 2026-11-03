@@ -7,6 +7,12 @@ M.S. Robotics Engineering, Worcester Polytechnic Institute · Expected May 2027 
 
 I’m a student researcher at PeAR Lab, WPI, building lightweight perception for flapping-wing robots. My projects cover visual-inertial estimation, occupancy forecasting, learned manipulation, and reproducible research software.
 
+<a href="https://shakthi-bala.github.io/projects/imitation-learning/#project-demo">
+  <img src="assets/ur5e-imitation-learning.gif" width="720" alt="Simulated UR5e pushing a T-shaped block toward a target with a policy transferred from 2D demonstrations">
+</a>
+
+_From 2D demonstrations to a simulated UR5e: a flow-matching policy on Push-T._ [Demo & implementation →](https://shakthi-bala.github.io/projects/imitation-learning/)
+
 ## Selected projects
 
 Project names link to code; the write-ups include implementation choices, evaluation conditions, demos, and reproduction instructions.
